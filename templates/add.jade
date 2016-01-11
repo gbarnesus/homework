@@ -1,0 +1,12 @@
+extends ./format.jade
+
+block content
+    p Add more movies here
+    form(action="/postMovie", method="POST")
+      p Movie Title: 
+        input(type="text", name="title", value="george")
+      p Movie Year: 
+        input(type="text", name="year")
+      p Movie IMBD: 
+        input(type="text", name="imbd")
+      input(type="submit", values="Submit")

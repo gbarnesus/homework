@@ -1,0 +1,7 @@
+extends ./format.jade
+
+block content
+      h2 Hello from your index.jade
+      for movie in movies
+        p #{movie.title}
+      a(href="/ADD") Add More Movies Here
